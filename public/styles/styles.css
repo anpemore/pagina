@@ -1,0 +1,28 @@
+h1 {
+    border-radius: 10px;
+    box-shadow: rgb(16, 2, 2) 5px 5px 10px inset;
+    background: rgb(53, 165, 193);
+    text-align: center;
+    color: #ffffff;
+}
+
+.item-campos {
+    margin-top: 10px;
+}
+
+.contenido {
+    width: 60%;
+}
+
+button {
+    box-shadow: rgb(1, 1, 15) 5px 5px 10px inset;
+}
+
+.contenedor_boton {
+    text-align: center;
+    margin: 10px;
+}
+
+.grupcampos {
+    height: 100%;
+}

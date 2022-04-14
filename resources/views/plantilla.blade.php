@@ -16,28 +16,26 @@
         integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
     </script>
 
+    <link rel="stylesheet" href="{{asset('style.css')}}">
+
     <title>Plantilla</title>
-    <link rel="stylesheet" href="/resources/css/app.css">
+
 </head>
 
 <body>
-    <div class="hearder ">
-        <h1 class="container bg-primary text-white text-center">Bievenidos al Sistema de Registro de Pacientes</h1>
-    </div>
+    <header class="header">
+        <nav class="nav">
+            <a href="{{route('inicio') }}" class="logo">SystemAnpe</a>
+            <ul class="menu">
+                <li class="menu-item"><a href="{{route('addclient') }}" class="menu-item-linck">Agregar</a></li>
+                <li class="menu-item"><a href="{{route('consultar') }}" class="menu-item-linck">Actualizar</a></li>
+                <li class="menu-item"><a href="{{route('inicio') }}" class="menu-item-linck">Eliminar</a></li>
+                <li class="menu-item"><a href="{{route('inicio') }}" class="menu-item-linck">Consultar</a></li>
+                <li class="menu-item"><a href="{{route('inicio') }}" class="menu-item-linck">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="container bg-success my-2">
-        <a href="{{route('addclient') }}" class="btn btn-primary">Insertar</a>
-        <a href="{{route('update') }}" class="btn btn-primary">Consultar</a>
-        <a href="{{route('inicio') }}" class="btn btn-primary">Inicio</a>
-
-
-
-
-
-
-
-
-    </div>
 
     <div class="container">
         @yield('seccion')
