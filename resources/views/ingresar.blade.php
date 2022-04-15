@@ -1,6 +1,9 @@
 @extends('plantilla')
 @section('seccion')
-<h1>Ingresar paciente </h1>
+<head>
+    <link rel="stylesheet" href="{{asset('styles/styles.css')}}">
+</head>
+<h1>Ingresar Cliente</h1>
 <div class="container">
     @if(session('mensaje'))
     <div class="alert alert-success">
@@ -27,8 +30,8 @@
         </div>
         <div class="container my-5 text-center">
             <input type="submit" class="btn btn-primary" value="Ingresar">
-            <input type="submit" class="btn btn-primary" value="Cancelar">
-            <input type="submit" class="btn btn-primary" value="Salir">
+            <input type="submit" class="btn btn-warning" value="Cancelar">
+            <input type="submit" class="btn btn-danger" value="Salir">
         </div>
     </form>
 </div>
