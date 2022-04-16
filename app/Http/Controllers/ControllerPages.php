@@ -30,6 +30,22 @@ public function producto(){
   return View('producto');
 }
 
+
+public function addproducto(Request $request){
+  $addproducto = new  App\Models\Producto();
+        $addproducto->idproducto=$request->id;
+        $addproducto->nomproducto=$request->nombre;
+        $addproducto->preproducto=$request->precio;
+        $addproducto->canproducto=$request->cantidad;
+        $addproducto->desproducto=$request->descripcion;
+        $addproducto->save();
+        return back();
+}
+
+public function pedido(){
+  return View('pedido');
+}
+
     public function addNota(Request $request){
        // return $request->all();
         $addNota = new  App\Models\Nota;

@@ -20,6 +20,10 @@ Route::get('ingresar','ControllerPages@ingresar')->name('addclient');
 
 Route::get('producto','ControllerPages@producto')->name('producto');
 
+route::post('addproducto','ControllerPages@addproducto')->name('addproducto');;
+
+Route::get('pedido','ControllerPages@pedido')->name('pedido');
+
 Route::get('ventana/{id}','ControllerPages@updatePasiente')->name('updatePasiente');
 
 route::post('/addpaciente','ControllerPages@addcrear')->name('addpaciente');

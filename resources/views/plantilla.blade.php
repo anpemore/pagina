@@ -31,7 +31,7 @@
                     <ul>
                         <li><a href="{{route('addclient') }}">Cliente </a></li>
                         <li><a href="{{route('producto') }}">Producto</a></li>
-                        <li><a href="">Pedidos</a></li>
+                        <li><a href="{{route('pedido') }}">Pedidos</a></li>
                         <li><a href="">Salir </a></li>
                     </ul>
 

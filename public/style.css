@@ -19,6 +19,7 @@ body {
     background: #0588bc;
     height: 55px;
     margin-bottom: 40px;
+    box-shadow: rgb(8, 24, 198) 5px 5px 10px inset;
 }
 
 .submenu {
@@ -66,12 +67,13 @@ ul {
 }
 
 .logo {
-    padding: 10px;
+    padding: 4px;
+    margin-top: 10px;
     margin-left: 40px;
     font-size: 20px;
     line-height: 26px;
     box-shadow: rgb(8, 24, 198) 5px 5px 10px inset;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .nav {
@@ -83,7 +85,7 @@ ul {
 .menu-item {
     margin: 0 3px;
     height: 30px;
-    border-radius: 20px;
+    border-radius: 10px;
     transition: 1s;
     box-shadow: rgb(8, 24, 198) 5px 5px 10px inset;
 }
