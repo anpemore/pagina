@@ -26,6 +26,9 @@ public function updateNota(Request $request, $id){
 
 }*/
 
+public function producto(){
+  return View('producto');
+}
 
     public function addNota(Request $request){
        // return $request->all();
@@ -37,7 +40,7 @@ public function updateNota(Request $request, $id){
         return back()->with('mensaje','Operacion Exitosa');
     }
 
-public function updateNota(Request $request,$id){
+public function updateNota(Request $request, $id){
     $addNota = App\Models\Nota::findOrFail($id);
     $addNota->nombre=$request->nombre;
     $addNota->descripcion=$request->descripcion;

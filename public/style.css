@@ -16,7 +16,7 @@ body {
 }
 
 .header {
-    background: #008080;
+    background: #0588bc;
     height: 55px;
     margin-bottom: 40px;
 }
@@ -33,13 +33,16 @@ body {
     border-radius: 2px;
 }
 
+ul li:hover {
+    background: #0588bc;
+}
+
 ul li:hover ul {
     margin-top: 5px;
     display: block;
     position: relative;
     box-shadow: rgb(8, 24, 198) 5px 5px 10px inset;
     transition: 3s;
-    border-radius: 10px;
 }
 
 li ul {
@@ -53,7 +56,7 @@ ul {
 
 .header a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
 }
 
 .logo:hover {

@@ -27,16 +27,16 @@
         <nav class="nav">
             <a href="{{route('inicio') }}" class="logo">SystemAnpe</a>
             <ul class="menu">
-                <li class="menu-item"><a href="{{route('addclient') }}" class="menu-item-linck">Ingresar</a>
+                <li class="menu-item"><a href="#" class="menu-item-linck">Ingresar</a>
                     <ul>
                         <li><a href="{{route('addclient') }}">Cliente </a></li>
-                        <li><a href="">Productos </a></li>
+                        <li><a href="{{route('producto') }}">Producto</a></li>
                         <li><a href="">Pedidos</a></li>
                         <li><a href="">Salir </a></li>
                     </ul>
 
                 </li>
-                <li class="menu-item"><a href="" class="menu-item-linck">Actualizar</a>
+                <li class="menu-item"><a href="#" class="menu-item-linck">Actualizar</a>
                     <ul>
                         <li><a href="{{route('consultar') }}">Cliente </a></li>
                         <li><a href="">Productos </a></li>

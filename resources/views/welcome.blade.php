@@ -5,10 +5,8 @@
     <link rel="stylesheet" href="{{asset('styles/plantilla.css')}}">
 </head>
 <div class="contenido grid-3">
-    <div class="header">
-        <p>
-            Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Voluptatem, vero.
+    <div class="heade">
+        <p>SISTEMA CONTROLADOR Y VENTAS DE PRODUCTOS DEL CAMPO A SUS CASA
         </p>
     </div>
 

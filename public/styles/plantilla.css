@@ -1,12 +1,12 @@
 .contenido {
-    border: solid;
     height: 500px;
 }
 
-.header {
-    height: 10%;
+.heade {
+    height: 8%;
     margin: 10px;
-    border: solid;
+    background: rgb(48, 137, 192);
+    box-shadow: rgb(8, 24, 198) 5px 5px 10px inset;
 }
 
 h1 {
@@ -19,7 +19,6 @@ h1 {
     width: 70%;
     height: 70%;
     margin: 10px;
-    border: solid;
 }
 
 p {
@@ -31,7 +30,6 @@ p {
     width: 25%;
     height: 70%;
     margin: 10px;
-    border: solid;
 }
 
 .pie {
@@ -39,7 +37,5 @@ p {
     width: 98%;
     height: 8%;
     margin: 10px;
-    border: solid;
     background: #a8a8a8;
-    border: solid;
 }
