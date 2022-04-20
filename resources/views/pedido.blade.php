@@ -1,7 +1,7 @@
 @extends('plantilla')
 @section('seccion')
 <div>
-    <h2>INGREAR PEDIDOS</h2>
+    <h2>INGRESAR PEDIDOS</h2>
     <form action="" method="post">
         @csrf
         <input type="text" class="form-control mb-2" placeholder="Nombre del Producto">

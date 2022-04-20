@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'ControllerPages@inicio')->name('inicio');
+
 Route::get('plantilla','ControllerPages@plantilla')->name('plantilla');
 
 Route::get('ingresar','ControllerPages@ingresar')->name('addclient');
@@ -23,6 +24,13 @@ Route::get('producto','ControllerPages@producto')->name('producto');
 route::post('addproducto','ControllerPages@addproducto')->name('addproducto');;
 
 Route::get('pedido','ControllerPages@pedido')->name('pedido');
+
+
+Route::get('buscar','ControllerPages@buscar')->name('buscar');
+
+
+
+Route::get('updatecliente','ControllerPages@updatecliente')->name('updatecliente');
 
 Route::get('ventana/{id}','ControllerPages@updatePasiente')->name('updatePasiente');
 

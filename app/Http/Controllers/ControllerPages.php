@@ -45,6 +45,13 @@ public function addproducto(Request $request){
 public function pedido(){
   return View('pedido');
 }
+public function updatecliente(){
+  return View('updatecliente');
+}
+public function buscar(Request $request){
+   
+  return View('updatecliente');
+}
 
     public function addNota(Request $request){
        // return $request->all();
