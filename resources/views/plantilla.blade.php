@@ -35,9 +35,9 @@
                 </li>
                 <li class="menu-item"><a href="#" class="menu-item-linck">Actualizar</a>
                     <ul>
-                        <li><a href="{{route('updatecliente') }}">Cliente </a></li>
-                        <li><a href="">Productos </a></li>
-                        <li><a href="">Pedidos</a></li>
+                        <li><a href="{{route('consultar')}}">Cliente </a></li>
+                        <li><a href="{{route('producto') }}">Productos </a></li>
+                        <li><a href="{{route('updatecliente') }}">Pedidos</a></li>
                         <li><a href="">Salir </a></li>
                     </ul>
                 </li>

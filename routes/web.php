@@ -2,16 +2,6 @@
 
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
 Route::get('/', 'ControllerPages@inicio')->name('inicio');
 
@@ -26,7 +16,7 @@ route::post('addproducto','ControllerPages@addproducto')->name('addproducto');;
 Route::get('pedido','ControllerPages@pedido')->name('pedido');
 
 
-Route::get('buscar','ControllerPages@buscar')->name('buscar');
+Route::get('/buscar','ControllerPages@tbuscar')->name('updatecliente');
 
 
 

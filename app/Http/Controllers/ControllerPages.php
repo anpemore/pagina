@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Facade\FlareClient\View;
 use Illuminate\Http\Request;
 use App;
 class ControllerPages extends Controller
@@ -46,14 +45,18 @@ public function pedido(){
   return View('pedido');
 }
 public function updatecliente(){
-  return View('updatecliente');
-}
-public function buscar(Request $request){
-   
-  return View('updatecliente');
+  $notas =App\Models\Paciente::paginate(3);
+  return View('updatecliente',compact('notas'));
 }
 
-    public function addNota(Request $request){
+
+public function tbuscar(){
+  $notas =App\Models\Paciente::paginate(3);
+        return View('consultar',compact('notas'));
+}
+
+
+public function addNota(Request $request){
        // return $request->all();
         $addNota = new  App\Models\Nota;
         $addNota->id=$request->id;
@@ -61,7 +64,8 @@ public function buscar(Request $request){
         $addNota->descripcion=$request->descripcion;
         $addNota->save();
         return back()->with('mensaje','Operacion Exitosa');
-    }
+ }
+
 
 public function updateNota(Request $request, $id){
     $addNota = App\Models\Nota::findOrFail($id);

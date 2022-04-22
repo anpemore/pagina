@@ -8,9 +8,10 @@
 <div class="container">
     <h4>Actaulizar Cliente</h4>
     <div class="contenedor">
-        <form action="route{{'buscar'}}" method="get">
+        <form action="{{route('updatecliente')}}" method="get">
+            @csrf
             <div>
-                <input type="text" name="nombre" id="id">
+                <input type="text" name="nombre">
                 <input type="submit" class="btn btn-warning btn-sm " value="Buscar">
             </div>
         </form>
@@ -25,26 +26,18 @@
                 <th scope="col">Operacion</th>
             </tr>
         </div>
+
         <tbody>
+            @foreach($notas as $campo)
             <tr>
-                <th scope="row">Identificacion</th>                
-                <td>Nombre</th>
-                <td>Direccion</td>
-                <td>Email</td>
-                <td><input type="text" class="btn btn-warning btn-sm" value="Editar"></td>
+                <th scope="row">{{$campo->idpaciente }}</th>
+                <td>{{$campo->nompaciente }}</td>
+                <td>{{$campo->apepaciente}}</td>
+                <td>{{$campo->emailpaciente}}</td>
             </tr>
+            @endforeach
         </tbody>
+
     </table>
 </div>
-@endsection
-
-@section('js')
-<link rel="stylesheet" href="{{asset('vendor/jquery-iu/jquery-ui.js')}}">
-<script>
-    alert('ghfhgj')
-    var nombres=['angel','mnuel','marcos','zorra'];
-    $('#id').autocomplete({
-        source:nombres
-    });
-</script>
 @endsection

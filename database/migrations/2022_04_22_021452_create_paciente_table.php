@@ -20,8 +20,6 @@ class CreatePacienteTable extends Migration
             $table->text('dirpaciente');
             $table->text('emailpaciente');
             $table->timestamps();
-
-
         });
     }
 
