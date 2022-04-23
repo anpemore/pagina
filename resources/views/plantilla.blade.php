@@ -37,7 +37,7 @@
                     <ul>
                         <li><a href="{{route('consultar')}}">Cliente </a></li>
                         <li><a href="{{route('producto') }}">Productos </a></li>
-                        <li><a href="{{route('updatecliente') }}">Pedidos</a></li>
+                        <li><a href="{{route('busqueda') }}">Buscar</a></li>
                         <li><a href="">Salir </a></li>
                     </ul>
                 </li>

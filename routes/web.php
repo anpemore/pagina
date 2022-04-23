@@ -16,11 +16,12 @@ route::post('addproducto','ControllerPages@addproducto')->name('addproducto');;
 Route::get('pedido','ControllerPages@pedido')->name('pedido');
 
 
-Route::get('/buscar','ControllerPages@tbuscar')->name('updatecliente');
+
+Route::get('busqueda','ControllerPages@busqueda')->name('busqueda');
+Route::get('getcliente','ControllerPages@getcliente')->name('getcliente');
 
 
 
-Route::get('updatecliente','ControllerPages@updatecliente')->name('updatecliente');
 
 Route::get('ventana/{id}','ControllerPages@updatePasiente')->name('updatePasiente');
 

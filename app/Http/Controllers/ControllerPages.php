@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App;
+use Facade\FlareClient\View;
+use Illuminate\Support\Facades\DB;
+
 class ControllerPages extends Controller
 {
     public function inicio(){
@@ -44,15 +47,22 @@ public function addproducto(Request $request){
 public function pedido(){
   return View('pedido');
 }
-public function updatecliente(){
-  $notas =App\Models\Paciente::paginate(3);
-  return View('updatecliente',compact('notas'));
+public function busqueda()
+{  
+  return View('busqueda');
+
 }
 
 
-public function tbuscar(){
-  $notas =App\Models\Paciente::paginate(3);
-        return View('consultar',compact('notas'));
+public function getcliente(Request $request)
+{
+  $res=$request->nombre;  
+  $cliente = DB::table('paciente')
+  ->select('*')
+  ->where('idpaciente','=',$res)
+  ->get();  
+   return view('updatecliente',compact('cliente'));
+
 }
 
 
