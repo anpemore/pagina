@@ -1,6 +1,7 @@
 @extends('plantilla')
 @section('seccion')
-<table class="table">
+<div class="container">
+    <table class="table">
         <div>
             <tr>
                 <th scope="col">Identificacion</th>
@@ -15,17 +16,25 @@
         <tbody>
             @foreach($cliente as $item)
             <tr>
-              <td><input type="text" value=" {{$item->idpaciente}}"></td>
-              <td><input type="text" value=" {{$item->nompaciente}}"></td>
-              <td><input type="text" value=" {{$item->apepaciente}}"></td>
-              <td><input type="text" value=" {{$item->dirpaciente}}"></td>
-              <td><input type="text" value=" {{$item->emailpaciente}}"></td>
-              <td><input class="btn btn-warning btn-sm" type="submit"></td>
-
-            </tr>  
-            @endforeach  
+                <form action="{{route('updates')}}" method="post">
+                    @method('PUT')
+                    @csrf
+                    <td><input type="text" name="id" value=" {{$item->idpaciente}}"></td>
+                    <td><input type="text" name="nombre" value=" {{$item->nompaciente}}"></td>
+                    <td><input type="text" name="apellido" value=" {{$item->apepaciente}}"></td>
+                    <td><input type="text" name="direccion" value=" {{$item->dirpaciente}}"></td>
+                    <td><input type="text" name="email" value=" {{$item->emailpaciente}}"></td>
+                    <td><input class="btn btn-warning btn-sm" type="submit" value="Actualizar"></td>
+                </form>
+            </tr>
+            @endforeach
         </tbody>
 
     </table>
+    <div  class="d-grid gap-1">
+        <a class="btn btn-success btn-sm" href="{{route('busqueda')}}" >
+            <h4>Retornar</h4>
+        </a>
+    </div>
 </div>
 @endsection

@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App;
-use Facade\FlareClient\View;
 use Illuminate\Support\Facades\DB;
 
 class ControllerPages extends Controller
@@ -52,8 +51,6 @@ public function busqueda()
   return View('busqueda');
 
 }
-
-
 public function getcliente(Request $request)
 {
   $res=$request->nombre;  
@@ -64,8 +61,6 @@ public function getcliente(Request $request)
    return view('updatecliente',compact('cliente'));
 
 }
-
-
 public function addNota(Request $request){
        // return $request->all();
         $addNota = new  App\Models\Nota;
@@ -83,9 +78,10 @@ public function updateNota(Request $request, $id){
     $addNota->descripcion=$request->descripcion;
     $addNota->save();
     return back();
-
-
 }
+
+
+
 
 
     public function addcrear(Request $request){

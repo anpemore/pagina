@@ -39,6 +39,10 @@ Route::delete('eliminar/{id}','ControllerPages@eliminar')->name('eliminar');
 
 route::put('updateNota/{id}','ControllerPages@updateNota')->name('updateNota');
 
+route::put('update','controlerCliente@updates')->name('updates');
+
+
+
 /*
 Route::get('arreglo/{dato?}','Controllerconsultar')->name('arreglo');
 */
